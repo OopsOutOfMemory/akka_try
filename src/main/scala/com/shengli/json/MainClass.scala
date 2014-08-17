@@ -28,7 +28,9 @@ object MainClass extends App{
    val strategy = fieldDesc.strategy.name match {
      case "regex" => 
        println("regex strategy")
-       RegexUtil.isMatchRegex(fieldDesc.strategy.name,fieldString)
+       val res = RegexUtil.MatchRegex(fieldDesc.strategy.expression,fieldString)
+       println(res)
+       val fieldValue = res.split(fieldDesc.splitor,-1)
      case _ => println("error")
    }
    
