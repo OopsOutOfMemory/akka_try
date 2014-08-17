@@ -13,7 +13,9 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" % "akka-actor_2.10" % "2.3.4" withSources () ,
   "org.scalatest" % "scalatest_2.10" % "2.2.0",
    "log4j" % "log4j" % "1.2.17",
-   "org.slf4j" % "slf4j-log4j12" % "1.7.7"
+   "org.slf4j" % "slf4j-log4j12" % "1.7.7",
+   "org.json4s" %% "json4s-native" % "3.2.10",  
+   "org.json4s" %% "json4s-jackson" % "3.2.10"  
 )
 
 
