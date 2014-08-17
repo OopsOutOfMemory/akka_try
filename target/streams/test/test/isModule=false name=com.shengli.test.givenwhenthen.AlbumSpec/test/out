@@ -1,0 +1,7 @@
+[0m[[0minfo[0m] [0m[32mAlbumSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mAn Album[0m[0m
+[0m[[0minfo[0m] [0m[32m- can add an Artist to the album at construction time[0m[0m
+[0m[[0minfo[0m] [0m[32m  + Given The album Thriller by Michael Jackson [0m[0m
+[0m[[0minfo[0m] [0m[32m  + When the album's artist is obtained [0m[0m
+[0m[[0minfo[0m] [0m[32m  + Then the artist obtained should be an instance of Artist [0m[0m
+[0m[[0minfo[0m] [0m[32m  + And the artist's first name and last name should be Michael Jackson [0m[0m

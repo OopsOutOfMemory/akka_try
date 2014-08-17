@@ -1,0 +1,63 @@
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\shengli.victor\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.7.jar: class org.slf4j.Logger now provided by C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.7.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\shengli.victor\.ivy2\cache\org.slf4j\slf4j-log4j12\jars\slf4j-log4j12-1.7.7.jar: class org.slf4j.impl.StaticLoggerBinder now provided by C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-log4j12\jars\slf4j-log4j12-1.7.7.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\shengli.victor\.ivy2\cache\log4j\log4j\bundles\log4j-1.2.17.jar: class org.apache.log4j.PropertyConfigurator now provided by C:\Users\Administrator\.ivy2\cache\log4j\log4j\bundles\log4j-1.2.17.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\shengli.victor\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.3.4.jar: class akka.actor.Actor now provided by C:\Users\Administrator\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.3.4.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating D:\jdk1.7\jre\lib\rt.jar: class java.lang.Object now provided by D:\jdk7\jre\lib\rt.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\shengli.victor\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.3.jar: class scala.util.matching.Regex now provided by C:\Users\Administrator\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set(C:\Users\shengli.victor\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.7.jar, C:\Users\shengli.victor\.ivy2\cache\org.slf4j\slf4j-log4j12\jars\slf4j-log4j12-1.7.7.jar, C:\Users\shengli.victor\.ivy2\cache\log4j\log4j\bundles\log4j-1.2.17.jar, C:\Users\shengli.victor\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.3.4.jar, D:\jdk1.7\jre\lib\rt.jar, C:\Users\shengli.victor\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.3.jar)[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set(E:\akka_try\src\main\scala\com\shengli\regex\RegexTest.scala, E:\akka_try\src\main\scala\com\shengli\WordCount.scala, E:\akka_try\src\main\scala\com\shengli\mapreduce\AggregateActor.scala, E:\akka_try\src\main\scala\com\shengli\akka\helloworld\HelloWorld.scala, E:\akka_try\src\main\scala\com\shengli\akka\helloworld\Main2.scala, E:\akka_try\src\main\scala\com\shengli\mapreduce\MapActor.scala, E:\akka_try\src\main\scala\com\shengli\akka\helloworld\Greeter.scala, E:\akka_try\src\main\scala\com\shengli\mapreduce\MasterActor.scala, E:\akka_try\src\main\scala\com\shengli\mapreduce\ReduceActor.scala, E:\akka_try\src\main\scala\com\shengli\mapreduce\MapReduceApplication.scala, E:\akka_try\src\main\scala\com\shengli\akka\helloworld\Main.scala, E:\akka_try\src\main\scala\com\shengli\regex\RegexUtil.scala, E:\akka_try\src\main\scala\com\shengli\pingpong\PingPong.scala, E:\akka_try\src\main\scala\com\shengli\akka\helloworld\GoodBye.scala, E:\akka_try\src\main\scala\com\shengli\akka\helloworld\Logging.scala)[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(E:\akka_try\src\main\scala\com\shengli\regex\RegexTest.scala, E:\akka_try\src\main\scala\com\shengli\WordCount.scala, E:\akka_try\src\main\scala\com\shengli\mapreduce\AggregateActor.scala, E:\akka_try\src\main\scala\com\shengli\akka\helloworld\HelloWorld.scala, E:\akka_try\src\main\scala\com\shengli\akka\helloworld\Main2.scala, E:\akka_try\src\main\scala\com\shengli\mapreduce\MapActor.scala, E:\akka_try\src\main\scala\com\shengli\akka\helloworld\Greeter.scala, E:\akka_try\src\main\scala\com\shengli\mapreduce\MasterActor.scala, E:\akka_try\src\main\scala\com\shengli\mapreduce\ReduceActor.scala, E:\akka_try\src\main\scala\com\shengli\mapreduce\MapReduceApplication.scala, E:\akka_try\src\main\scala\com\shengli\akka\helloworld\Main.scala, E:\akka_try\src\main\scala\com\shengli\regex\RegexUtil.scala, E:\akka_try\src\main\scala\com\shengli\pingpong\PingPong.scala, E:\akka_try\src\main\scala\com\shengli\akka\helloworld\GoodBye.scala, E:\akka_try\src\main\scala\com\shengli\akka\helloworld\Logging.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 15 sources: invalidated sources (15) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 15 Scala sources to E:\akka_try\target\scala-2.10\classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mPlain interface to Scala compiler 2.10.3  with arguments: [0m
+[0m[[0mdebug[0m] [0m	-nowarn[0m
+[0m[[0mdebug[0m] [0m	-d[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_8645ca6b[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	D:\jdk7\jre\lib\resources.jar;D:\jdk7\jre\lib\rt.jar;D:\jdk7\jre\lib\sunrsasign.jar;D:\jdk7\jre\lib\jsse.jar;D:\jdk7\jre\lib\jce.jar;D:\jdk7\jre\lib\charsets.jar;D:\jdk7\jre\lib\jfr.jar;D:\jdk7\jre\classes;C:\Users\Administrator\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	C:\Users\Administrator\.sbt\boot\scala-2.10.4\org.scala-sbt\sbt\0.13.5\xsbti\interface-0.13.5.jar;C:\Users\Administrator\.sbt\boot\scala-2.10.4\org.scala-sbt\sbt\0.13.5\compiler-interface-src\compiler-interface-src-0.13.5.jar;C:\Users\Administrator\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.10.3.jar;C:\Users\Administrator\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.10.3.jar;C:\Users\Administrator\.ivy2\cache\org.scala-lang\jline\jars\jline-2.10.3.jar;C:\Users\Administrator\.ivy2\cache\org.fusesource.jansi\jansi\jars\jansi-1.4.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\API.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\Analyzer.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\Command.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\Compat.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\CompilerInterface.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\ConsoleInterface.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\DelegatingReporter.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\Dependency.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\ExtractAPI.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\ExtractUsedNames.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\LocateClassFile.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\Log.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\Message.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\ADMINI~1\AppData\Local\Temp\sbt_cb8e4105\xsbt\ScaladocInterface.scala[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 3a703ade, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	D:\jdk7\jre\lib\resources.jar;D:\jdk7\jre\lib\rt.jar;D:\jdk7\jre\lib\sunrsasign.jar;D:\jdk7\jre\lib\jsse.jar;D:\jdk7\jre\lib\jce.jar;D:\jdk7\jre\lib\charsets.jar;D:\jdk7\jre\lib\jfr.jar;D:\jdk7\jre\classes;C:\Users\Administrator\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	E:\akka_try\target\scala-2.10\classes;C:\Users\Administrator\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.3.4.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\Administrator\.ivy2\cache\org.scalatest\scalatest_2.10\bundles\scalatest_2.10-2.2.0.jar;C:\Users\Administrator\.sbt\boot\scala-2.10.4\lib\scala-reflect.jar;C:\Users\Administrator\.ivy2\cache\log4j\log4j\bundles\log4j-1.2.17.jar;C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-log4j12\jars\slf4j-log4j12-1.7.7.jar;C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.7.jar[0m
+[0m[[33mwarn[0m] [0mthere were 5 deprecation warning(s); re-run with -deprecation for details[0m
+[0m[[33mwarn[0m] [0mthere were 1 feature warning(s); re-run with -feature for details[0m
+[0m[[33mwarn[0m] [0mtwo warnings found[0m
+[0m[[0mdebug[0m] [0mScala compilation took 32.651254973 s[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m

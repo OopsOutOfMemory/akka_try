@@ -1,0 +1,107 @@
+eclipse
+;
+~compile
+run
+run com.shengli.akka.helloworld.HelloWorld
+~compile
+run
+~compile
+eclipse
+�H
+eclipse
+update
+exit
+eclipse
+run
+test
+eclipse
+test
+update
+eclipse
+update
+reload
+eclipse
+reload
+update
+eclipse
+test
+~test
+reload
+update
+eclipse
+reload
+update
+reload
+update
+eclipse
+exit
+update
+reload
+update
+eclipse
+sbt clean compile
+clean compile
+clean compile "com.shengli.test.AlbumTest"
+ clean compile "test-only com.shengli.test.AlbumTest"
+clean
+compile
+test-only com.shengli.test.AlbumTest
+test
+test-only *A*
+tasks
+test-only com.shengli.test.AlbumTest
+test:compile
+console-quick
+console
+test:console
+!
+!
+!
+!
+test
+test
+!
+!:
+!string
+test
+!only
+test-only com.shengli.test.AlbumTest
+~test
+test-only com.shengli.test.AlbumTest
+�H
+!:
+run
+test
+!
+!:69
+!
+test-only com.shengli.test.AlbumTest
+test
+test-only com.shengli.test.givenwhenthen.AlbumTest --  option
+sbt
+test
+test-only com.shengli.test.givenwhenthen.AlbumTest
+test-only com.shengli.test.givenwhenthen.AlbumTest
+~test
+!
+!:3
+!
+!
+!:
+test-only com.shengli.test.givenwhenthen.AlbumTest -- -z 
+test-only com.shengli.test.givenwhenthen.AlbumTest -- -z 
+test-only com.shengli.test.givenwhenthen.AlbumTest
+test
+test
+test-only com.shengli.test.givenwhenthen.AlbumSpec
+~test
+reload
+update
+reload
+update
+eclipse
+test
+test-only com.shengli.test.TestRegex
+~test
+~test-only com.shengli.test.TestRegex
+~test

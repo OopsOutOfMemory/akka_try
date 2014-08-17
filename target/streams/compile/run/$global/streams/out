@@ -1,0 +1,12 @@
+[0m[[0minfo[0m] [0mRunning com.shengli.akka.helloworld.Main2 [0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-3 to terminate.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	E:\akka_try\target\scala-2.10\classes[0m
+[0m[[0mdebug[0m] [0m	C:\Users\shengli.victor\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.3.4.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\shengli.victor\.sbt\boot\scala-2.10.4\lib\scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\shengli.victor\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\shengli.victor\.ivy2\cache\org.scalatest\scalatest_2.10\bundles\scalatest_2.10-2.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\shengli.victor\.sbt\boot\scala-2.10.4\lib\scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-3 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread Hello-akka.actor.default-dispatcher-2 to terminate.[0m
