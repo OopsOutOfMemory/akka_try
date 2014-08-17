@@ -1,3 +1,10 @@
 {
-  
+  "fieldName":"character_name",
+  "fieldIndex":3,
+  "strategy": {
+   name : "regex",
+   expression : "Charac#\\d+"
+  },
+  "splitor" : "#",
+  "extract" : "right"
 }
