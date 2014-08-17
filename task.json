@@ -2,8 +2,8 @@
   "fieldName":"character_name",
   "fieldIndex":3,
   "strategy": {
-   name : "regex",
-   expression : "Charac#\\d+"
+   "name" : "regex",
+   "expression" : "Chara#\\d+"
   },
   "splitor" : "#",
   "extract" : "right"
