@@ -5,23 +5,23 @@
   <classpathentry kind="src" path="src\test\scala" output="target\scala-2.10\test-classes"/>
   <classpathentry kind="src" path="src\test\java" output="target\scala-2.10\test-classes"/>
   <classpathentry kind="src" path="src\test\resources" output="target\scala-2.10\test-classes"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.3.4.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.3.4.jar"/>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\org.scalatest\scalatest_2.10\bundles\scalatest_2.10-2.2.0.jar"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\log4j\log4j\bundles\log4j-1.2.17.jar"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-log4j12\jars\slf4j-log4j12-1.7.7.jar"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.7.jar"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\org.json4s\json4s-native_2.10\jars\json4s-native_2.10-3.2.10.jar"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\org.json4s\json4s-core_2.10\jars\json4s-core_2.10-3.2.10.jar"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\org.json4s\json4s-ast_2.10\jars\json4s-ast_2.10-3.2.10.jar"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\com.thoughtworks.paranamer\paranamer\jars\paranamer-2.6.jar"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\org.scala-lang\scalap\jars\scalap-2.10.0.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\org.scalatest\scalatest_2.10\bundles\scalatest_2.10-2.2.0.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\log4j\log4j\bundles\log4j-1.2.17.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\org.slf4j\slf4j-log4j12\jars\slf4j-log4j12-1.7.7.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.7.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\org.json4s\json4s-native_2.10\jars\json4s-native_2.10-3.2.10.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\org.json4s\json4s-core_2.10\jars\json4s-core_2.10-3.2.10.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\org.json4s\json4s-ast_2.10\jars\json4s-ast_2.10-3.2.10.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\com.thoughtworks.paranamer\paranamer\jars\paranamer-2.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\org.scala-lang\scalap\jars\scalap-2.10.0.jar"/>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_COMPILER_CONTAINER"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\org.json4s\json4s-jackson_2.10\jars\json4s-jackson_2.10-3.2.10.jar"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.1.jar"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.0.jar"/>
-  <classpathentry kind="lib" path="C:\Users\Administrator\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.1.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\org.json4s\json4s-jackson_2.10\jars\json4s-jackson_2.10-3.2.10.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.1.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.0.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.1.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
 </classpath>

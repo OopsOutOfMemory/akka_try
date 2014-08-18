@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e0badaf[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d12cf29[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -120,19 +120,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->org.json4s#json4s-native_2.10;3.2.10 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.json4s#json4s-native_2.10;3.2.10 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.json4s#json4s-native_2.10;3.2.10 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.json4s\json4s-native_2.10\3.2.10\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.json4s#json4s-native_2.10;3.2.10[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.json4s#json4s-native_2.10;3.2.10[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.pom (3.2.10)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.json4s#json4s-native_2.10;3.2.10!json4s-native_2.10.pom(pom.original) (1833ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.json4s\json4s-native_2.10\3.2.10\jars\json4s-native_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.jar[0m
-[0m[[0mdebug[0m] [0m	found org.json4s#json4s-native_2.10;3.2.10 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.json4s#json4s-native_2.10;3.2.10[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.json4s#json4s-native_2.10;3.2.10[0m
+[0m[[0mdebug[0m] [0m	found org.json4s#json4s-native_2.10;3.2.10 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->org.json4s#json4s-native_2.10;3.2.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->org.json4s#json4s-native_2.10;3.2.10 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-native_2.10;3.2.10->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
@@ -142,19 +132,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-native_2.10;3.2.10->org.json4s#json4s-core_2.10;3.2.10 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.json4s#json4s-core_2.10;3.2.10 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.json4s#json4s-core_2.10;3.2.10 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.json4s\json4s-core_2.10\3.2.10\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.json4s#json4s-core_2.10;3.2.10[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.json4s#json4s-core_2.10;3.2.10[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.pom (3.2.10)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.json4s#json4s-core_2.10;3.2.10!json4s-core_2.10.pom(pom.original) (3432ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.json4s\json4s-core_2.10\3.2.10\jars\json4s-core_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.jar[0m
-[0m[[0mdebug[0m] [0m	found org.json4s#json4s-core_2.10;3.2.10 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.json4s#json4s-core_2.10;3.2.10[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.json4s#json4s-core_2.10;3.2.10[0m
+[0m[[0mdebug[0m] [0m	found org.json4s#json4s-core_2.10;3.2.10 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-native_2.10;3.2.10->org.json4s#json4s-core_2.10;3.2.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
@@ -163,19 +143,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.json4s#json4s-ast_2.10;3.2.10 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.json4s#json4s-ast_2.10;3.2.10 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.json4s\json4s-ast_2.10\3.2.10\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.json4s#json4s-ast_2.10;3.2.10[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.json4s#json4s-ast_2.10;3.2.10[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.pom (3.2.10)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.json4s#json4s-ast_2.10;3.2.10!json4s-ast_2.10.pom(pom.original) (3321ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.json4s\json4s-ast_2.10\3.2.10\jars\json4s-ast_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.jar[0m
-[0m[[0mdebug[0m] [0m	found org.json4s#json4s-ast_2.10;3.2.10 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.json4s#json4s-ast_2.10;3.2.10[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.json4s#json4s-ast_2.10;3.2.10[0m
+[0m[[0mdebug[0m] [0m	found org.json4s#json4s-ast_2.10;3.2.10 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
@@ -184,121 +154,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.thoughtworks.paranamer#paranamer;2.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.thoughtworks.paranamer#paranamer;2.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.thoughtworks.paranamer\paranamer\2.6\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.thoughtworks.paranamer#paranamer;2.6[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.thoughtworks.paranamer#paranamer;2.6[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom (2.6)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.6!paranamer.pom(pom.original) (2520ms)[0m
-[0m[[0minfo[0m] [0mResolving com.thoughtworks.paranamer#paranamer-parent;2.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.thoughtworks.paranamer#paranamer-parent;2.6 {}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.thoughtworks.paranamer\paranamer-parent\2.6\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.thoughtworks.paranamer#paranamer-parent;2.6[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.thoughtworks.paranamer#paranamer-parent;2.6[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.pom (2.6)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer-parent;2.6!paranamer-parent.pom(pom.original) (3060ms)[0m
-[0m[[0minfo[0m] [0mResolving org.codehaus#codehaus-parent;4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.codehaus#codehaus-parent;4 {}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.codehaus\codehaus-parent\4\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.codehaus#codehaus-parent;4[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.codehaus#codehaus-parent;4[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom (4)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.codehaus#codehaus-parent;4!codehaus-parent.pom(pom.original) (2197ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.codehaus\codehaus-parent\4\jars\codehaus-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repository.apache.org/content/repositories/releases/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repository.apache.org/content/repositories/releases/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repository.jboss.org/nexus/content/repositories/releases/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repository.jboss.org/nexus/content/repositories/releases/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.eclipse.org/content/repositories/paho-releases/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.eclipse.org/content/repositories/paho-releases/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repository.cloudera.com/artifactory/cloudera-repos/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repository.cloudera.com/artifactory/cloudera-repos/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repository.cloudera.com/content/repositories/releases/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repository.cloudera.com/content/repositories/releases/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Administrator/.m2/repository/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://oss.sonatype.org/content/repositories/releases/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://oss.sonatype.org/content/repositories/releases/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://oss.sonatype.org/content/repositories/snaspshots/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://oss.sonatype.org/content/repositories/snaspshots/org/codehaus/codehaus-parent/4/codehaus-parent-4.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.thoughtworks.paranamer\paranamer-parent\2.6\jars\paranamer-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.maven.apache.org/maven2/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.maven.apache.org/maven2/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repository.apache.org/content/repositories/releases/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repository.apache.org/content/repositories/releases/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repository.jboss.org/nexus/content/repositories/releases/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repository.jboss.org/nexus/content/repositories/releases/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.eclipse.org/content/repositories/paho-releases/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.eclipse.org/content/repositories/paho-releases/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repository.cloudera.com/artifactory/cloudera-repos/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repository.cloudera.com/artifactory/cloudera-repos/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repository.cloudera.com/content/repositories/releases/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repository.cloudera.com/content/repositories/releases/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Administrator/.m2/repository/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://oss.sonatype.org/content/repositories/releases/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://oss.sonatype.org/content/repositories/releases/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://oss.sonatype.org/content/repositories/snaspshots/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://oss.sonatype.org/content/repositories/snaspshots/com/thoughtworks/paranamer/paranamer-parent/2.6/paranamer-parent-2.6.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.thoughtworks.paranamer\paranamer\2.6\jars\paranamer.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar[0m
-[0m[[0mdebug[0m] [0m	found com.thoughtworks.paranamer#paranamer;2.6 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.thoughtworks.paranamer#paranamer;2.6[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.thoughtworks.paranamer#paranamer;2.6[0m
+[0m[[0mdebug[0m] [0m	found com.thoughtworks.paranamer#paranamer;2.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scalap;2.10.0 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scalap;2.10.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.scala-lang\scalap\2.10.0\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-lang#scalap;2.10.0[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.scala-lang#scalap;2.10.0[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.pom (2.10.0)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scalap;2.10.0!scalap.pom(pom.original) (1067ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.scala-lang\scalap\2.10.0\jars\scalap.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scala-lang#scalap;2.10.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scalap;2.10.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scalap;2.10.0[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scalap;2.10.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scalap;2.10.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scalap;2.10.0->org.scala-lang#scala-compiler;2.10.0 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.10.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.scala-lang\scala-compiler\2.10.0\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-lang#scala-compiler;2.10.0[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.scala-lang#scala-compiler;2.10.0[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.pom (2.10.0)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.10.0!scala-compiler.pom(pom.original) (1984ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.scala-lang\scala-compiler\2.10.0\jars\scala-compiler.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.10.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-compiler;2.10.0[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.10.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scalap;2.10.0->org.scala-lang#scala-compiler;2.10.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.0->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.0->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
@@ -339,19 +211,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->org.json4s#json4s-jackson_2.10;3.2.10 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.json4s#json4s-jackson_2.10;3.2.10 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.json4s#json4s-jackson_2.10;3.2.10 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.json4s\json4s-jackson_2.10\3.2.10\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.json4s#json4s-jackson_2.10;3.2.10[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.10/3.2.10/json4s-jackson_2.10-3.2.10.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.json4s#json4s-jackson_2.10;3.2.10[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.10/3.2.10/json4s-jackson_2.10-3.2.10.pom (3.2.10)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.10/3.2.10/json4s-jackson_2.10-3.2.10.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.10/3.2.10/json4s-jackson_2.10-3.2.10.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.10/3.2.10/json4s-jackson_2.10-3.2.10.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.10/3.2.10/json4s-jackson_2.10-3.2.10.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.json4s#json4s-jackson_2.10;3.2.10!json4s-jackson_2.10.pom(pom.original) (1218ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\org.json4s\json4s-jackson_2.10\3.2.10\jars\json4s-jackson_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.10/3.2.10/json4s-jackson_2.10-3.2.10.jar[0m
-[0m[[0mdebug[0m] [0m	found org.json4s#json4s-jackson_2.10;3.2.10 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.json4s#json4s-jackson_2.10;3.2.10[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.json4s#json4s-jackson_2.10;3.2.10[0m
+[0m[[0mdebug[0m] [0m	found org.json4s#json4s-jackson_2.10;3.2.10 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->org.json4s#json4s-jackson_2.10;3.2.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->org.json4s#json4s-jackson_2.10;3.2.10 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-jackson_2.10;3.2.10->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
@@ -363,7 +225,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-jackson_2.10;3.2.10->com.fasterxml.jackson.core#jackson-databind;2.3.1 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.fasterxml.jackson.core#jackson-databind;2.3.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.fasterxml.jackson.core#jackson-databind;2.3.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.fasterxml.jackson.core\jackson-databind\2.3.1\ivys\ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.fasterxml.jackson.core\jackson-databind\2.3.1\ivys\ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for com.fasterxml.jackson.core#jackson-databind;2.3.1[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.1/jackson-databind-2.3.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for com.fasterxml.jackson.core#jackson-databind;2.3.1[0m
@@ -372,10 +234,10 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.1/jackson-databind-2.3.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.1/jackson-databind-2.3.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.1/jackson-databind-2.3.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-databind;2.3.1!jackson-databind.pom(pom.original) (1314ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-databind;2.3.1!jackson-databind.pom(pom.original) (1335ms)[0m
 [0m[[0minfo[0m] [0mResolving com.fasterxml#oss-parent;12 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.fasterxml#oss-parent;12 {}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.fasterxml\oss-parent\12\ivys\ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.fasterxml\oss-parent\12\ivys\ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for com.fasterxml#oss-parent;12[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/fasterxml/oss-parent/12/oss-parent-12.pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for com.fasterxml#oss-parent;12[0m
@@ -384,8 +246,8 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/oss-parent/12/oss-parent-12.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/oss-parent/12/oss-parent-12.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/fasterxml/oss-parent/12/oss-parent-12.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.fasterxml#oss-parent;12!oss-parent.pom(pom.original) (4139ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.fasterxml\oss-parent\12\jars\oss-parent.jar[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.fasterxml#oss-parent;12!oss-parent.pom(pom.original) (1569ms)[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.fasterxml\oss-parent\12\jars\oss-parent.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
 [0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
@@ -397,24 +259,25 @@
 [0m[[0mdebug[0m] [0m		tried https://repository.jboss.org/nexus/content/repositories/releases/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
 [0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repository.jboss.org/nexus/content/repositories/releases/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://repo.eclipse.org/content/repositories/paho-releases/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.eclipse.org/content/repositories/paho-releases/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
+[0m[[33mwarn[0m] [0mHost repo.eclipse.org not found. url=https://repo.eclipse.org/content/repositories/paho-releases/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
+[0m[[0minfo[0m] [0mYou probably access the destination server through a proxy server that is not well configured.[0m
 [0m[[0mdebug[0m] [0m		tried http://repository.cloudera.com/artifactory/cloudera-repos/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
 [0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repository.cloudera.com/artifactory/cloudera-repos/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://repository.cloudera.com/content/repositories/releases/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
 [0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repository.cloudera.com/content/repositories/releases/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Administrator/.m2/repository/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/C:/Users/shengli.victor/.m2/repository/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://oss.sonatype.org/content/repositories/releases/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
 [0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://oss.sonatype.org/content/repositories/releases/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://oss.sonatype.org/content/repositories/snaspshots/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
 [0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://oss.sonatype.org/content/repositories/snaspshots/com/fasterxml/oss-parent/12/oss-parent-12.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.fasterxml.jackson.core\jackson-databind\2.3.1\bundles\jackson-databind.jar[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.fasterxml.jackson.core\jackson-databind\2.3.1\bundles\jackson-databind.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.1/jackson-databind-2.3.1.jar[0m
 [0m[[0mdebug[0m] [0m	found com.fasterxml.jackson.core#jackson-databind;2.3.1 in public[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-jackson_2.10;3.2.10->com.fasterxml.jackson.core#jackson-databind;2.3.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.3.1->com.fasterxml.jackson.core#jackson-annotations;2.3.0 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.fasterxml.jackson.core#jackson-annotations;2.3.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.fasterxml.jackson.core#jackson-annotations;2.3.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.fasterxml.jackson.core\jackson-annotations\2.3.0\ivys\ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.fasterxml.jackson.core\jackson-annotations\2.3.0\ivys\ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for com.fasterxml.jackson.core#jackson-annotations;2.3.0[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for com.fasterxml.jackson.core#jackson-annotations;2.3.0[0m
@@ -423,10 +286,10 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-annotations;2.3.0!jackson-annotations.pom(pom.original) (1189ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-annotations;2.3.0!jackson-annotations.pom(pom.original) (1170ms)[0m
 [0m[[0minfo[0m] [0mResolving com.fasterxml#oss-parent;11 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.fasterxml#oss-parent;11 {}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.fasterxml\oss-parent\11\ivys\ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.fasterxml\oss-parent\11\ivys\ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for com.fasterxml#oss-parent;11[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/fasterxml/oss-parent/11/oss-parent-11.pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for com.fasterxml#oss-parent;11[0m
@@ -435,8 +298,8 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/oss-parent/11/oss-parent-11.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/oss-parent/11/oss-parent-11.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/fasterxml/oss-parent/11/oss-parent-11.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.fasterxml#oss-parent;11!oss-parent.pom(pom.original) (1457ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.fasterxml\oss-parent\11\jars\oss-parent.jar[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.fasterxml#oss-parent;11!oss-parent.pom(pom.original) (1657ms)[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.fasterxml\oss-parent\11\jars\oss-parent.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/fasterxml/oss-parent/11/oss-parent-11.jar[0m
 [0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/fasterxml/oss-parent/11/oss-parent-11.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/fasterxml/oss-parent/11/oss-parent-11.jar[0m
@@ -453,19 +316,19 @@
 [0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repository.cloudera.com/artifactory/cloudera-repos/com/fasterxml/oss-parent/11/oss-parent-11.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://repository.cloudera.com/content/repositories/releases/com/fasterxml/oss-parent/11/oss-parent-11.jar[0m
 [0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repository.cloudera.com/content/repositories/releases/com/fasterxml/oss-parent/11/oss-parent-11.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Administrator/.m2/repository/com/fasterxml/oss-parent/11/oss-parent-11.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/C:/Users/shengli.victor/.m2/repository/com/fasterxml/oss-parent/11/oss-parent-11.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://oss.sonatype.org/content/repositories/releases/com/fasterxml/oss-parent/11/oss-parent-11.jar[0m
 [0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://oss.sonatype.org/content/repositories/releases/com/fasterxml/oss-parent/11/oss-parent-11.jar[0m
 [0m[[0mdebug[0m] [0m		tried https://oss.sonatype.org/content/repositories/snaspshots/com/fasterxml/oss-parent/11/oss-parent-11.jar[0m
 [0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://oss.sonatype.org/content/repositories/snaspshots/com/fasterxml/oss-parent/11/oss-parent-11.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.fasterxml.jackson.core\jackson-annotations\2.3.0\bundles\jackson-annotations.jar[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.fasterxml.jackson.core\jackson-annotations\2.3.0\bundles\jackson-annotations.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.jar[0m
 [0m[[0mdebug[0m] [0m	found com.fasterxml.jackson.core#jackson-annotations;2.3.0 in public[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.3.1->com.fasterxml.jackson.core#jackson-annotations;2.3.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.3.1->com.fasterxml.jackson.core#jackson-core;2.3.1 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.fasterxml.jackson.core#jackson-core;2.3.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.fasterxml.jackson.core#jackson-core;2.3.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.fasterxml.jackson.core\jackson-core\2.3.1\ivys\ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.fasterxml.jackson.core\jackson-core\2.3.1\ivys\ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for com.fasterxml.jackson.core#jackson-core;2.3.1[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.1/jackson-core-2.3.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for com.fasterxml.jackson.core#jackson-core;2.3.1[0m
@@ -474,12 +337,12 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.1/jackson-core-2.3.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.1/jackson-core-2.3.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.1/jackson-core-2.3.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-core;2.3.1!jackson-core.pom(pom.original) (940ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-core;2.3.1!jackson-core.pom(pom.original) (2100ms)[0m
 [0m[[0minfo[0m] [0mResolving com.fasterxml#oss-parent;12 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.fasterxml#oss-parent;12 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.fasterxml#oss-parent;12[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.fasterxml#oss-parent;12[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Administrator\.ivy2\local\com.fasterxml.jackson.core\jackson-core\2.3.1\bundles\jackson-core.jar[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.fasterxml.jackson.core\jackson-core\2.3.1\bundles\jackson-core.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.1/jackson-core-2.3.1.jar[0m
 [0m[[0mdebug[0m] [0m	found com.fasterxml.jackson.core#jackson-core;2.3.1 in public[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.fasterxml.jackson.core#jackson-databind;2.3.1->com.fasterxml.jackson.core#jackson-core;2.3.1 [compile->compile(*)][0m
@@ -1269,75 +1132,76 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalatest#scalatest_2.10;2.2.0!scalatest_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] log4j#log4j;1.2.17!log4j.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.slf4j#slf4j-log4j12;1.7.7!slf4j-log4j12.jar[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\org.json4s\json4s-native_2.10\3.2.10\jars\json4s-native_2.10.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.jar[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.json4s#json4s-native_2.10;3.2.10!json4s-native_2.10.jar (2073ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.json4s#json4s-native_2.10;3.2.10!json4s-native_2.10.jar (2722ms)[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\org.json4s\json4s-jackson_2.10\3.2.10\jars\json4s-jackson_2.10.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.10/3.2.10/json4s-jackson_2.10-3.2.10.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.10/3.2.10/json4s-jackson_2.10-3.2.10.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.10/3.2.10/json4s-jackson_2.10-3.2.10.jar[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.10/3.2.10/json4s-jackson_2.10-3.2.10.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.10/3.2.10/json4s-jackson_2.10-3.2.10.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.json4s#json4s-jackson_2.10;3.2.10!json4s-jackson_2.10.jar (1421ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.json4s#json4s-jackson_2.10;3.2.10!json4s-jackson_2.10.jar (3251ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.7!slf4j-api.jar[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\org.json4s\json4s-core_2.10\3.2.10\jars\json4s-core_2.10.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.jar[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.json4s#json4s-core_2.10;3.2.10!json4s-core_2.10.jar (4372ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.json4s#json4s-core_2.10;3.2.10!json4s-core_2.10.jar (10593ms)[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\org.json4s\json4s-ast_2.10\3.2.10\jars\json4s-ast_2.10.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.jar[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.json4s#json4s-ast_2.10;3.2.10!json4s-ast_2.10.jar (1602ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.json4s#json4s-ast_2.10;3.2.10!json4s-ast_2.10.jar (2748ms)[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.thoughtworks.paranamer\paranamer\2.6\jars\paranamer.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.6!paranamer.jar (1182ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scalap;2.10.0!scalap.jar (6252ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.6!paranamer.jar (1910ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scalap;2.10.0!scalap.jar[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\org.scala-lang\scala-compiler\2.10.0\jars\scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.jar[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.10.0!scala-compiler.jar (76493ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.10.0!scala-compiler.jar (187400ms)[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.1/jackson-databind-2.3.1.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.1/jackson-databind-2.3.1.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.1/jackson-databind-2.3.1.jar[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.1/jackson-databind-2.3.1.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.1/jackson-databind-2.3.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-databind;2.3.1!jackson-databind.jar(bundle) (2930ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-databind;2.3.1!jackson-databind.jar(bundle) (4254ms)[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.jar[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-annotations;2.3.0!jackson-annotations.jar(bundle) (1199ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-annotations;2.3.0!jackson-annotations.jar(bundle) (1406ms)[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.1/jackson-core-2.3.1.jar[0m
 [0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.1/jackson-core-2.3.1.jar ...[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.1/jackson-core-2.3.1.jar[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.1/jackson-core-2.3.1.jar.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.1/jackson-core-2.3.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-core;2.3.1!jackson-core.jar(bundle) (1480ms)[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-core;2.3.1!jackson-core.jar(bundle) (2130ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.3!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.3!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 84417ms :: artifacts dl 99085ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 58925ms :: artifacts dl 216567ms[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 compile produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 runtime produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 test produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-test.xml[0m
@@ -1351,5 +1215,5 @@
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 docs produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 pom produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 scala-tool produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (84417ms resolve - 99085ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (58925ms resolve - 216567ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

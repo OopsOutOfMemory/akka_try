@@ -1,4 +1,4 @@
-{
+[{
   "fieldName":"character_name",
   "fieldIndex":3,
   "strategy": {
@@ -7,4 +7,16 @@
   },
   "splitor" : "#",
   "extract" : "right"
+},
+{
+  "fieldName":"entity_id",
+  "fieldIndex":3,
+  "strategy": {
+   "name" : "regex",
+   "expression" : "Entity#\\d+"
+  },
+  "splitor" : "#",
+  "extract" : "right"
 }
+
+]
