@@ -23,7 +23,7 @@ object MapReduceApplication extends App {
 	 val master = _system.actorOf(Props[MasterActor], name = "master")
 	 implicit val timeout = Timeout(5 seconds)
 	 val sources = scala.io.Source.fromFile("item_log.txt")
-	 master ! PoisonPill
+//	 master ! PoisonPill
 	 master ! "The quick brown fox tried to jump over the lazy dog and fell on the dog"
 	 master ! "Dog is man's best friend"
 	 master ! "Dog and Fox belong to the same family"
