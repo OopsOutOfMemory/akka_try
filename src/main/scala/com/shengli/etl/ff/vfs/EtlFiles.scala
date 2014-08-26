@@ -5,20 +5,13 @@ import java.io.File
 import org.apache.commons.vfs.FileSystemManager
 import com.shengli.etl.ff.log.Logging
 
-object BaseFileReaders extends App {
-     val  path ="""E:\akka_try\item_log.txt"""
-     val  reader = new PlainFileReader
-     val lines = reader.readLines(path)
-     lines.filter(_.contains("GatheringResult")).foreach(println)
-}
-
 /** 
 * @ClassName: BaseFileReader 
 * @Description: TODO
 * @author shengli.victor 盛利
 * @date 2014年8月25日  
 */ 
-abstract class BaseFileReader extends Logging{
+abstract class BaseFile extends Logging{
     def vfs() : FileSystemManager = {
       val fsManager = VFS.getManager()
       fsManager
@@ -27,16 +20,27 @@ abstract class BaseFileReader extends Logging{
     def readLines(path : String) : Seq[String]
 }
 
-
-class PlainFileReader extends BaseFileReader {
+/**
+ * Read file from plain text
+ */
+class PlainFile extends BaseFile {
    override def readLines(path : String) : Seq[String] = {
-     logInfo("resolve file from path->"+path)
+     logInfo("resolve plain file from path->"+path)
      val fileObj = vfs.resolveFile(path)
      val instream = fileObj.getContent().getInputStream()
-     val source = scala.io.Source.fromInputStream(instream)
+     val source = scala.io.Source.fromInputStream(instream,"UTF-8")
      source.getLines.toSeq
    }
 }
 
-//class HDFSFileReader extends BaseFileReader
+
+/**
+ * Read file from hdfs, should provide path like : hdfs://xxxx:xx/xxx/xx
+ */
+class HDFSFile extends BaseFile {
+   override def readLines(path : String) : Seq[String] = {
+     logInfo("resolve hdfs file from path->"+path)
+     throw new RuntimeException("not yet implement!")
+   }
+}
 
