@@ -1,0 +1,4 @@
+[0m[[0minfo[0m] [0m[32mTestVFS:[0m[0m
+[0m[[0minfo[0m] [0m[32mtext read file with absolute path[0m[0m
+[0m[[0minfo[0m] [0m[32m- test plain file[0m[0m
+[0m[[0minfo[0m] [0m[32m- test hdfs file[0m[0m

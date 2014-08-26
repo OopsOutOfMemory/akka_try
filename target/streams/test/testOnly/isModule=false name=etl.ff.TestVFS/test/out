@@ -1,0 +1,5 @@
+[0m[[0minfo[0m] [0m[32mTestVFS:[0m[0m
+[0m[[0minfo[0m] [0m[32mtext read file with absolute path[0m[0m
+[0m[[0minfo[0m] [0m[31m- test plain file *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  243672 was not equal to 0 (TestVFS.scala:24)[0m[0m
+[0m[[0minfo[0m] [0m[32m- test hdfs file[0m[0m
