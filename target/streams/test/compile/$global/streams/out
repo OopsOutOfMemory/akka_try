@@ -1,38 +1,30 @@
-[0m[[0mdebug[0m] [0mInvalidating C:\Users\shengli.victor\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.3.jar: class scala.Function0 now provided by C:\Users\Administrator\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.3.jar[0m
-[0m[[0mdebug[0m] [0mInvalidating C:\Users\shengli.victor\.ivy2\cache\org.scalatest\scalatest_2.10\bundles\scalatest_2.10-2.2.0.jar: class org.scalatest.Matchers now provided by C:\Users\Administrator\.ivy2\cache\org.scalatest\scalatest_2.10\bundles\scalatest_2.10-2.2.0.jar[0m
-[0m[[0mdebug[0m] [0mInvalidating D:\jdk1.7\jre\lib\rt.jar: class java.io.Serializable now provided by D:\jdk7\jre\lib\rt.jar[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
 [0m[[0mdebug[0m] [0m	added: Set()[0m
-[0m[[0mdebug[0m] [0m	modified: Set(E:\akka_try\src\test\scala\com\shengli\test\TestRegex.scala)[0m
-[0m[[0mdebug[0m] [0mRemoved products: Set(E:\akka_try\target\scala-2.10\test-classes\com\shengli\test\TestRegex$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcV$sp$2.class, E:\akka_try\target\scala-2.10\test-classes\com\shengli\test\TestRegex.class, E:\akka_try\target\scala-2.10\test-classes\com\shengli\test\TestRegex$$anonfun$1.class, E:\akka_try\target\scala-2.10\test-classes\com\shengli\test\TestRegex$$anonfun$1$$anonfun$apply$mcV$sp$1.class)[0m
+[0m[[0mdebug[0m] [0m	modified: Set(E:\akka_try\src\test\scala\etl\ff\TestMapping.scala)[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set(E:\akka_try\target\scala-2.10\test-classes\etl\ff\ConsoleTest$.class, E:\akka_try\target\scala-2.10\test-classes\etl\ff\TestMapping$$anonfun$1$$anonfun$apply$mcV$sp$2.class, E:\akka_try\target\scala-2.10\test-classes\etl\ff\TestMapping$$anonfun$1.class, E:\akka_try\target\scala-2.10\test-classes\etl\ff\ConsoleTest.class, E:\akka_try\target\scala-2.10\test-classes\etl\ff\TestMapping$$anonfun$1$$anonfun$apply$mcV$sp$1.class, E:\akka_try\target\scala-2.10\test-classes\etl\ff\TestMapping.class)[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
-[0m[[0mdebug[0m] [0mModified binary dependencies: Set(C:\Users\shengli.victor\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.3.jar, C:\Users\shengli.victor\.ivy2\cache\org.scalatest\scalatest_2.10\bundles\scalatest_2.10-2.2.0.jar, D:\jdk1.7\jre\lib\rt.jar)[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(E:\akka_try\src\test\scala\com\shengli\test\TestRegex.scala)[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(E:\akka_try\src\test\scala\etl\ff\TestMapping.scala)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
-[0m[[0mdebug[0m] [0m	product: Set(E:\akka_try\src\test\scala\com\shengli\test\TestRegex.scala)[0m
-[0m[[0mdebug[0m] [0m	binary dep: Set(E:\akka_try\src\test\scala\com\shengli\test\TestRegex.scala, E:\akka_try\src\test\scala\com\shengli\test\givenwhenthen\AlbumSpec.scala, E:\akka_try\src\test\scala\com\shengli\test\AlbumTest.scala)[0m
+[0m[[0mdebug[0m] [0m	product: Set(E:\akka_try\src\test\scala\etl\ff\TestMapping.scala)[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(E:\akka_try\src\test\scala\com\shengli\test\TestRegex.scala, E:\akka_try\src\test\scala\com\shengli\test\givenwhenthen\AlbumSpec.scala, E:\akka_try\src\test\scala\com\shengli\test\AlbumTest.scala)[0m
-[0m[[0mdebug[0m] [0mRecompiling all 3 sources: invalidated sources (3) exceeded 50.0% of all sources[0m
-[0m[[0minfo[0m] [0mCompiling 3 Scala sources to E:\akka_try\target\scala-2.10\test-classes...[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(E:\akka_try\src\test\scala\etl\ff\TestMapping.scala)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to E:\akka_try\target\scala-2.10\test-classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 3bd76fe1, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 7856857d, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
-[0m[[0mdebug[0m] [0m	D:\jdk7\jre\lib\resources.jar;D:\jdk7\jre\lib\rt.jar;D:\jdk7\jre\lib\sunrsasign.jar;D:\jdk7\jre\lib\jsse.jar;D:\jdk7\jre\lib\jce.jar;D:\jdk7\jre\lib\charsets.jar;D:\jdk7\jre\lib\jfr.jar;D:\jdk7\jre\classes;C:\Users\Administrator\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0m	D:\jdk1.7\jre\lib\resources.jar;D:\jdk1.7\jre\lib\rt.jar;D:\jdk1.7\jre\lib\sunrsasign.jar;D:\jdk1.7\jre\lib\jsse.jar;D:\jdk1.7\jre\lib\jce.jar;D:\jdk1.7\jre\lib\charsets.jar;D:\jdk1.7\jre\lib\jfr.jar;D:\jdk1.7\jre\classes;C:\Users\shengli.victor\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
-[0m[[0mdebug[0m] [0m	E:\akka_try\target\scala-2.10\test-classes;E:\akka_try\target\scala-2.10\classes;C:\Users\Administrator\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.3.4.jar;C:\Users\Administrator\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\Administrator\.ivy2\cache\org.scalatest\scalatest_2.10\bundles\scalatest_2.10-2.2.0.jar;C:\Users\Administrator\.sbt\boot\scala-2.10.4\lib\scala-reflect.jar;C:\Users\Administrator\.ivy2\cache\log4j\log4j\bundles\log4j-1.2.17.jar;C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-log4j12\jars\slf4j-log4j12-1.7.7.jar;C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.7.jar[0m
-[0m[[33mwarn[0m] [0mthere were 7 deprecation warning(s); re-run with -deprecation for details[0m
+[0m[[0mdebug[0m] [0m	E:\akka_try\target\scala-2.10\test-classes;E:\akka_try\target\scala-2.10\classes;C:\Users\shengli.victor\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.3.4.jar;C:\Users\shengli.victor\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\shengli.victor\.ivy2\cache\org.scalatest\scalatest_2.10\bundles\scalatest_2.10-2.2.0.jar;C:\Users\shengli.victor\.sbt\boot\scala-2.10.4\lib\scala-reflect.jar;C:\Users\shengli.victor\.ivy2\cache\log4j\log4j\bundles\log4j-1.2.17.jar;C:\Users\shengli.victor\.ivy2\cache\org.slf4j\slf4j-log4j12\jars\slf4j-log4j12-1.7.7.jar;C:\Users\shengli.victor\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.7.jar;C:\Users\shengli.victor\.ivy2\cache\org.json4s\json4s-native_2.10\jars\json4s-native_2.10-3.2.10.jar;C:\Users\shengli.victor\.ivy2\cache\org.json4s\json4s-core_2.10\jars\json4s-core_2.10-3.2.10.jar;C:\Users\shengli.victor\.ivy2\cache\org.json4s\json4s-ast_2.10\jars\json4s-ast_2.10-3.2.10.jar;C:\Users\shengli.victor\.ivy2\cache\com.thoughtworks.paranamer\paranamer\jars\paranamer-2.6.jar;C:\Users\shengli.victor\.ivy2\cache\org.scala-lang\scalap\jars\scalap-2.10.0.jar;C:\Users\shengli.victor\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.10.0.jar;C:\Users\shengli.victor\.ivy2\cache\org.json4s\json4s-jackson_2.10\jars\json4s-jackson_2.10-3.2.10.jar;C:\Users\shengli.victor\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.1.jar;C:\Users\shengli.victor\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.0.jar;C:\Users\shengli.victor\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.1.jar;C:\Users\shengli.victor\.ivy2\cache\commons-vfs\commons-vfs\jars\commons-vfs-1.0.jar;C:\Users\shengli.victor\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.0.4.jar[0m
+[0m[[33mwarn[0m] [0mthere were 1 deprecation warning(s); re-run with -deprecation for details[0m
 [0m[[33mwarn[0m] [0mone warning found[0m
-[0m[[0mdebug[0m] [0mScala compilation took 4.015706987 s[0m
-[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(E:\akka_try\src\test\scala\com\shengli\test\TestRegex.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(E:\akka_try\src\test\scala\com\shengli\test\TestRegex.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mScala compilation took 2.934968663 s[0m
 [0m[[0mdebug[0m] [0mNew invalidations:[0m
 [0m[[0mdebug[0m] [0m	Set()[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m

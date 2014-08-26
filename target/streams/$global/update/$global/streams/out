@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e4a7ee0[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@743ad3dd[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -260,19 +260,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->commons-vfs#commons-vfs;1.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving commons-vfs#commons-vfs;1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-vfs#commons-vfs;1.0 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\commons-vfs\commons-vfs\1.0\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for commons-vfs#commons-vfs;1.0[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for commons-vfs#commons-vfs;1.0[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.pom (1.0)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] commons-vfs#commons-vfs;1.0!commons-vfs.pom(pom.original) (13590ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\commons-vfs\commons-vfs\1.0\jars\commons-vfs.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.jar[0m
-[0m[[0mdebug[0m] [0m	found commons-vfs#commons-vfs;1.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-vfs#commons-vfs;1.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: commons-vfs#commons-vfs;1.0[0m
+[0m[[0mdebug[0m] [0m	found commons-vfs#commons-vfs;1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->commons-vfs#commons-vfs;1.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->commons-vfs#commons-vfs;1.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies commons-vfs#commons-vfs;1.0->commons-logging#commons-logging;1.0.4 [compile->master(*)][0m
@@ -1101,12 +1091,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.slf4j#slf4j-log4j12;1.7.7!slf4j-log4j12.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.json4s#json4s-native_2.10;3.2.10!json4s-native_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.json4s#json4s-jackson_2.10;3.2.10!json4s-jackson_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] commons-vfs#commons-vfs;1.0!commons-vfs.jar (1986ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-vfs#commons-vfs;1.0!commons-vfs.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar[0m
@@ -1124,7 +1109,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.3!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 17423ms :: artifacts dl 2202ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2371ms :: artifacts dl 39ms[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 compile produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 runtime produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 test produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-test.xml[0m
@@ -1138,5 +1123,5 @@
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 docs produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 pom produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 scala-tool produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (17423ms resolve - 2202ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (2371ms resolve - 39ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

@@ -1,5 +1,7 @@
 #Successful Tests
-#Sun Aug 17 08:10:51 CST 2014
+#Tue Aug 26 09:40:21 CST 2014
+etl.ff.TestMapping=1409017221445
+etl.ff.TestVFS=1409017011305
 com.shengli.test.AlbumSpec=1408073970064
-com.shengli.test.TestRegex=1408234251762
-com.shengli.test.givenwhenthen.AlbumSpec=1408234251763
+com.shengli.test.TestRegex=1409016997326
+com.shengli.test.givenwhenthen.AlbumSpec=1409016997330

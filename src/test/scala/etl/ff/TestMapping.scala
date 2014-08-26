@@ -5,7 +5,7 @@ import org.scalatest.FunSpec
 import com.shengli.etl.ff.vfs.PlainFile
 import com.shengli.etl.ff.log.Logging
 import scala.collection.mutable.HashMap
-import com.shengli.etl.ff.filters.LogRulesMapping
+import com.shengli.etl.ff.mapping.LogRulesMapping
 
 object ConsoleTest extends App {
 }

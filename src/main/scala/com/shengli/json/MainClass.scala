@@ -10,9 +10,10 @@ import com.shengli.etl.ff.strategies.RegexStrategy
 import com.shengli.etl.ff.strategies.FieldDesc
 import com.shengli.etl.ff.strategies.CommonStrategy
 import com.shengli.etl.ff.strategies.SingleValueStrategy
+import com.shengli.etl.ff.log.Logging
 
 
-object MainClass extends App  { 
+object MainClass extends App with Logging { 
   
    implicit val formats = DefaultFormats // Brings in default date formats etc.
    val line = "2014-08-10	1	5	f1f3_20	2014-08-10 11:17:58  INFO  item - [game][item][game][evnt]CraftLeveNpcTrade,leve_id=107,handler=EventHandlerType#14 EventHandlerIndex#0 EventHandlerId#917504,actor=Chara#19014409509679630 Entity#268672935,pc_name=培尔贝瑞,x=168.161713,y=8.718561,z=-48.012917,target=Kind#3 BaseId#1001220 LayoutId#2257677 Chara#0 Entity#1073742005,target_name=朱利昂贝尔"
@@ -31,9 +32,9 @@ object MainClass extends App  {
 	  println(resultMap)
    }
    catch{
-     case ex : JsonParseException => println("Error when parsing rules -> " + ex.getMessage())
-     case ex : ArrayIndexOutOfBoundsException => println("please check your index setting, index out of bounds")
-     case ex : Exception =>println("RunTime exception ->" + ex)
+     case ex : JsonParseException => logInfo("Error when parsing rules -> " + ex.getMessage())
+     case ex : ArrayIndexOutOfBoundsException => logInfo("please check your index setting, index out of bounds")
+     case ex : Exception =>logInfo("RunTime exception ->" + ex)
    }
 
    
@@ -54,29 +55,25 @@ object MainClass extends App  {
    def resolveField(fieldDesc :FieldDesc) : String = {
 	   //segments
 	   val segments = line.split("\t")
-	   println(segments.mkString)
-	   val valueArr = segments(fieldDesc.segmentIndex).split(",",-1)
-	   
-	   //field
-	   val fieldString = valueArr(fieldDesc.fieldIndex)
-	   println(fieldString)
-	   
+	  
+	   val segmentValue = segments(fieldDesc.segmentIndex)
+	    println("mkstring -> "+segmentValue.mkString)
 	   //extract strategy
 	   val res = fieldDesc.strategy.name match {
 	     
 	     //This strategy is used for regex matching
 	     case "regex" => 
-	       val regex = new RegexStrategy(fieldString, fieldDesc)
+	       val regex = new RegexStrategy(segmentValue, fieldDesc)
 	       regex.apply
 		   
 		 //This strategy is commonly used to fileId=fieldValue  
 	     case "no_regex" => 
-	       val no_regex = new CommonStrategy(fieldString, fieldDesc)
+	       val no_regex = new CommonStrategy(segmentValue, fieldDesc)
 	       no_regex.apply
 	     
 	     //This strategy is used for the segment directly field
 	     case "single_value" => 
-	       val do_nothing = new SingleValueStrategy(fieldString)
+	       val do_nothing = new SingleValueStrategy(segmentValue)
 	       do_nothing.apply
 	   }
 	   res

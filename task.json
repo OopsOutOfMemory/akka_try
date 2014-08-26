@@ -3,19 +3,56 @@
 {
   "fieldName":"data_date",
   "segmentIndex":0,
-  "fieldIndex" :0,
   "strategy": {
    "name" : "single_value",
    "expression" : ""
   },
-  script : " "
   "splitor" : "",
   "extract" : ""
-}
-,{
+},
+{
+  "fieldName":"area_id",
+  "segmentIndex":1,
+  "strategy": {
+   "name" : "single_value",
+   "expression" : ""
+  },
+  "splitor" : "",
+  "extract" : ""
+},
+{
+  "fieldName":"group_id",
+  "segmentIndex":2,
+  "strategy": {
+   "name" : "single_value",
+   "expression" : ""
+  },
+  "splitor" : "",
+  "extract" : ""
+},
+{
+  "fieldName":"map_name",
+  "segmentIndex":3,
+  "strategy": {
+   "name" : "single_value",
+   "expression" : ""
+  },
+  "splitor" : "",
+  "extract" : ""
+},
+{
+  "fieldName":"log_time",
+  "segmentIndex":4,
+  "strategy": {
+   "name" : "regex",
+   "expression" : "\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}"
+  },
+  "splitor" : "",
+  "extract" : ""
+},
+{
   "fieldName":"character_name",
   "segmentIndex":4,
-  "fieldIndex":3,
   "strategy": {
    "name" : "regex",
    "expression" : "Chara#\\d+"
@@ -26,7 +63,6 @@
 {
   "fieldName":"entity_id",
   "segmentIndex":4,
-  "fieldIndex":3,
   "strategy": {
    "name" : "regex",
    "expression" : "Entity#\\d+"
@@ -35,12 +71,11 @@
   "extract" : "right"
 },
 {
-  "fieldName":"level_id",
+  "fieldName":"leve_id",
   "segmentIndex":4,
-  "fieldIndex":1,
   "strategy": {
-   "name" : "no_regex",
-   "expression" : ""
+   "name" : "regex",
+   "expression" : "leve_id=\\d+"
   },
   "splitor" : "=",
   "extract" : "right"

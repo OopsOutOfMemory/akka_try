@@ -7,15 +7,15 @@
 		revision="1.0"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20140819144825"/>
+		date="20140826095333"/>
 	<dependencies>
 		<module organisation="commons-vfs" name="commons-vfs">
-			<revision name="1.0" status="release" pubdate="20061229024519" resolver="public" artresolver="public" homepage="http://jakarta.apache.org/commons/vfs/" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="18">
+			<revision name="1.0" status="release" pubdate="20061229024519" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jakarta.apache.org/commons/vfs/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="18">
 				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
-				<metadata-artifact status="successful" details="" size="5948" time="13590" location="C:\Users\shengli.victor\.ivy2\cache\commons-vfs\commons-vfs\ivy-1.0.xml" searched="true" original-local-location="C:\Users\shengli.victor\.ivy2\cache\commons-vfs\commons-vfs\ivy-1.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.pom"/>
+				<metadata-artifact status="no" details="" size="3581" time="0" location="C:\Users\shengli.victor\.ivy2\cache\commons-vfs\commons-vfs\ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.pom"/>
 				<caller organisation="default" name="akka_try_2.10" conf="optional, compile, provided, compile-internal" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="commons-vfs" type="jar" ext="jar" status="successful" details="" size="362717" time="1986" location="C:\Users\shengli.victor\.ivy2\cache\commons-vfs\commons-vfs\jars\commons-vfs-1.0.jar">
+					<artifact name="commons-vfs" type="jar" ext="jar" status="no" details="" size="362717" time="0" location="C:\Users\shengli.victor\.ivy2\cache\commons-vfs\commons-vfs\jars\commons-vfs-1.0.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-vfs/commons-vfs/1.0/commons-vfs-1.0.jar"/>
 					</artifact>
 				</artifacts>

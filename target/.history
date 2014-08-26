@@ -113,3 +113,28 @@ eclipse
 reload
 update
 eclipse
+test
+test-only etl.ff.TestVFS
+‡H
+test-only etl.ff.TestVFS
+println count
+test-only etl.ff.TestVFS
+‡H
+test  *V*
+test-only *F*
+ val  path ="""E:\akka_try\item_log.txt"""
+ew PlainFile
+es = pFile.readLines(path)
+t = lines.size
+fo("size is :" + count)
+test-only *F*
+test
+test-only *LOG*
+test-only *Mapping*
+ test-only *Mapping*
+[gsys]ItemGet,
+test-only *Mapping*
+console
+reload
+update
+eclipse 
