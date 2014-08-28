@@ -15,16 +15,16 @@ class TestMapping extends FunSpec with ShouldMatchers with Logging {
     describe("test can get correct game log ? "){
       it("test get ff14_item_get_log rules......"){
         val game_name  = "ff14"
-        val log_name = "ff14_item_get_log"
+        val log_name = "[gsys]ItemGet,"
         val rules = LogRulesMapping.get(game_name,log_name)
-        rules should be("[gsys]ItemGet,")
+        rules should be("ff14_item_get_log")
       }
       
        it("test get non-exists rules......"){
         val game_name  = "ff14"
-        val log_name = "ff14_leve_up"
+        val log_name = ""
         val rules = LogRulesMapping.get(game_name,log_name)
-        rules should be("")
+        rules should be("ff14_leve_up")
       }
     }
 }

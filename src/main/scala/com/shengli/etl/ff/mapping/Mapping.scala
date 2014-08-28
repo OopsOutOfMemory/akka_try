@@ -26,9 +26,9 @@ object LogRulesMapping extends Mapping {
    val mappings = new HashMap[String, HashMap[String, String]]()
    private val game1 = "ff14"
    private val ff14Mapping = new HashMap[String, String]()
-   ff14Mapping += ("ff14_item_get_log"->"""[gsys]ItemGet,""")
-   ff14Mapping += ("ff14_stack_log"->"""[gsys]SetStack,""")
-   ff14Mapping += ("ff14_craft_leve_npc_log"->"""[evnt]CraftLeveNpcTrade""")
+   ff14Mapping += ("""[gsys]ItemGet,"""->"ff14_item_get_log")
+   ff14Mapping += ("""[gsys]SetStack,"""->"ff14_stack_log")
+   ff14Mapping += ("""[evnt]CraftLeveNpcTrade"""->"ff14_craft_leve_npc_log")
    
    mappings += (game1 -> ff14Mapping)
    
@@ -38,8 +38,8 @@ object LogRulesMapping extends Mapping {
    }
    
    //get rules from the gieven game_name and log_name
-   def get(game_name : String, log_name : String) : String = {
-	   val rules = mappings.getOrElse(game_name, new HashMap()).getOrElse(log_name, "")  
-	   rules.toString()
+   def get(game_name : String, rule_name : String) : String = {
+	   val log_name = mappings.getOrElse(game_name, new HashMap()).getOrElse(rule_name, "")  
+	   log_name.toString()
    }
 }

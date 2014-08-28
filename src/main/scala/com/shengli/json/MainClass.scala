@@ -11,6 +11,7 @@ import com.shengli.etl.ff.strategies.FieldDesc
 import com.shengli.etl.ff.strategies.CommonStrategy
 import com.shengli.etl.ff.strategies.SingleValueStrategy
 import com.shengli.etl.ff.log.Logging
+import com.shengli.etl.ff.strategies.Rule
 
 
 object MainClass extends App with Logging { 
@@ -22,7 +23,13 @@ object MainClass extends App with Logging {
    
    println(jsonSrc)
    try {
+      val jsonSrc = scala.io.Source.fromFile("task.json").getLines.mkString;
 	  val json = parse(jsonSrc)
+	  val app_name = (json \ "app_name").extract[String]
+	  val rule_exp = (json \ "rule_expression").extract[String]
+	  val fieldList = (json \ "fields_desc").extract[List[FieldDesc]]
+	  fieldList foreach println
+	  val rule = new Rule(app_name, rule_exp,fieldList)
 	  json.children.foreach{
 	  child=>
       val field = child.extract[FieldDesc]

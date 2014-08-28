@@ -5,7 +5,7 @@ import com.shengli.etl.ff.log.Logging
 
 case class FieldDesc(fieldName:String, segmentIndex:Int,  strategy : Strategy,  splitor : String, extract : String)
 case class Strategy(name:String, expression:String)
-
+case class Rule(app_name : String, rule_expression : String, fieldList : List[FieldDesc])
   
 //use for different strategies to matching fields
 abstract case class BaseStrategy extends Logging {
