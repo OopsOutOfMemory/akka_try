@@ -20,4 +20,13 @@ object RegexUtil {
 	  }
 	  res.toString()
 	}
+	
+	def MatchMutipleRegex(regex : String, line : String) : List[String] = {
+	  val pattern = regex.r
+	  val res =  pattern findAllMatchIn line match {
+	    case it : Iterator[_] => it.toList.asInstanceOf[List[String]]
+	    case _ => List()
+	  }
+	  res
+	}
 }

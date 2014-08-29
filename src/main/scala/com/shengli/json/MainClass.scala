@@ -12,6 +12,7 @@ import com.shengli.etl.ff.strategies.CommonStrategy
 import com.shengli.etl.ff.strategies.SingleValueStrategy
 import com.shengli.etl.ff.log.Logging
 import com.shengli.etl.ff.strategies.Rule
+import com.shengli.etl.ff.strategies.OutputStrategy
 
 
 object MainClass extends App with Logging { 
@@ -28,8 +29,9 @@ object MainClass extends App with Logging {
 	  val app_name = (json \ "app_name").extract[String]
 	  val rule_exp = (json \ "rule_expression").extract[String]
 	  val fieldList = (json \ "fields_desc").extract[List[FieldDesc]]
+	  val output = (json \ "output_strategy").extract[OutputStrategy]
 	  fieldList foreach println
-	  val rule = new Rule(app_name, rule_exp,fieldList)
+	  val rule = new Rule(app_name, rule_exp,fieldList, output)
 	  json.children.foreach{
 	  child=>
       val field = child.extract[FieldDesc]

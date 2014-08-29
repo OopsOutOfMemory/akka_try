@@ -1,6 +1,9 @@
 [
 { "app_name" : "ff14",
   "rule_expression" : "[evnt]CraftLeveNpcTrade",
+  "output_strategy" : {
+    "name" : "one2one"
+  },
   "fields_desc" : [
 	{
 	  "fieldName":"data_date",
@@ -98,6 +101,9 @@
 
 { "app_name" : "ff14",
   "rule_expression" : "[gsys]ItemGet,",
+   "output_strategy" : {
+    "name" : "one2one"
+  },
   "fields_desc" : [
 	{
 	  "fieldName":"data_date",
@@ -190,6 +196,96 @@
 	  "extract" : "right"
 	}
 	]
+}
+,
+
+{ "app_name" : "ff14",
+  "rule_expression" : "[gsys]TradeSubmit",
+  "output_strategy" : {
+     "name" : "one2many",
+     "iterate_field" : "catalogs"
+   },
+  "fields_desc" : [
+	{
+	  "fieldName":"data_date",
+	  "segmentIndex":0,
+	  "strategy": {
+	   "name" : "single_value",
+	   "expression" : ""
+	  },
+	  "splitor" : "",
+	  "extract" : ""
+	},
+	{
+	  "fieldName":"area_id",
+	  "segmentIndex":1,
+	  "strategy": {
+	   "name" : "single_value",
+	   "expression" : ""
+	  },
+	  "splitor" : "",
+	  "extract" : ""
+	},
+	{
+	  "fieldName":"group_id",
+	  "segmentIndex":2,
+	  "strategy": {
+	   "name" : "single_value",
+	   "expression" : ""
+	  },
+	  "splitor" : "",
+	  "extract" : ""
+	},
+	{
+	  "fieldName":"map_name",
+	  "segmentIndex":3,
+	  "strategy": {
+	   "name" : "single_value",
+	   "expression" : ""
+	  },
+	  "splitor" : "",
+	  "extract" : ""
+	},
+	{
+	  "fieldName":"log_time",
+	  "segmentIndex":4,
+	  "strategy": {
+	   "name" : "regex",
+	   "expression" : "\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}"
+	  },
+	  "splitor" : "",
+	  "extract" : ""
+	},
+	{
+	  "fieldName":"character_name",
+	  "segmentIndex":4,
+	  "strategy": {
+	   "name" : "regex",
+	   "expression" : "Chara#\\d+"
+	  },
+	  "splitor" : "#",
+	  "extract" : "right"
+	},
+	{
+	  "fieldName":"entity_id",
+	  "segmentIndex":4,
+	  "strategy": {
+	   "name" : "regex",
+	   "expression" : "Entity#\\d+"
+	  },
+	  "splitor" : "#",
+	  "extract" : "right"
+	},
+	{
+	  "fieldName":"catalogs",
+	  "segmentIndex":4,
+	  "strategy": {
+	   "name" : "regex_multiple",
+	   "expression" : "catalog_\\d+=\\d+"
+	  },
+	  "splitor" : "=",
+	  "extract" : "right"
+	}]
 }
 
 

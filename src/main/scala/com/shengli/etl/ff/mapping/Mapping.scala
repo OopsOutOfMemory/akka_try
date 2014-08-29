@@ -29,7 +29,7 @@ object LogRulesMapping extends Mapping {
    ff14Mapping += ("""[gsys]ItemGet,"""->"ff14_item_get_log")
    ff14Mapping += ("""[gsys]SetStack,"""->"ff14_stack_log")
    ff14Mapping += ("""[evnt]CraftLeveNpcTrade"""->"ff14_craft_leve_npc_log")
-   
+   ff14Mapping += ("""[gsys]TradeSubmit"""->"ff14_c2c_item_log")
    mappings += (game1 -> ff14Mapping)
    
    

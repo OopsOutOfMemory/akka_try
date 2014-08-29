@@ -2,23 +2,26 @@ package com.shengli.alpha.grinder
 
 import scala.collection.mutable.ArrayBuffer
 import scala.collection.mutable.HashSet
-
 import org.json4s.jackson.JsonMethods.parse
 import org.json4s.jvalue2extractable
 import org.json4s.jvalue2monadic
 import org.json4s.string2JsonInput
-
 import com.shengli.etl.ff.mapping.LogRulesMapping
 import com.shengli.etl.ff.strategies.CommonStrategy
 import com.shengli.etl.ff.strategies.FieldDesc
 import com.shengli.etl.ff.strategies.RegexStrategy
 import com.shengli.etl.ff.strategies.Rule
 import com.shengli.etl.ff.strategies.SingleValueStrategy
-
+import com.shengli.etl.ff.strategies.OutputStrategy
 import akka.actor.ActorRef
 import akka.actor.ActorSystem
 import akka.actor.Props
 import akka.actor.actorRef2Scala
+import com.shengli.etl.ff.strategies.OutputStrategy
+import com.shengli.etl.ff.strategies.OneToManyOutputStrategy
+import com.shengli.etl.ff.strategies.OneToOneOutputStrategy
+import com.shengli.etl.ff.strategies.OutputStrategy
+import com.shengli.etl.ff.strategies.OneToOneOutputStrategy
 
 //
 case class Meat(rule_exp : String, log_name : String, rule : Rule)
@@ -75,7 +78,7 @@ object GrinderApplication  extends App {
 	}
 	
 	/*
-	 *This function perform a Meat as (rule_exp, log_name, rule: Rule) so we can extract
+	 *This function perform a Meat as (rule_exp, log_name, rule: Rule, opt: outputStrategy) so we can extract
 	 * 
 	 */
 	def formatRuleLog(ruleList : ArrayBuffer[Rule]) : ArrayBuffer[Meat] = {
@@ -100,8 +103,15 @@ object GrinderApplication  extends App {
 	      val app_name = (child \ "app_name").extract[String]
 		  val rule_exp = (child \ "rule_expression").extract[String]
 		  val fieldList = (child \ "fields_desc").extract[List[FieldDesc]]
+	      val output = (child \ "output_strategy").extract[OutputStrategy]
+//	      val output_strategy = output.name match {
+//	        case "one2one"=>
+//	          output.asInstanceOf[OneToOneOutputStrategy]
+//	        case "one2many"=>
+//	          output.asInstanceOf[OneToManyOutputStrategy]
+//	      }
 		  fieldList foreach println
-		  val rule = new Rule(app_name, rule_exp,fieldList)
+		  val rule = new Rule(app_name, rule_exp,fieldList,output)
 		  ruleList+=rule
 	  }
 	  ruleList
@@ -145,9 +155,20 @@ object GrinderApplication  extends App {
    
    def grindMeat(line : String, meat : Meat) {
       val rule = meat.rule
-      val sb : StringBuilder = new StringBuilder()
-      val fieldList = new ArrayBuffer[String]()
-      rule.fieldList.foreach{field=>
+      rule.out_strategy match {
+        case one2one : OneToOneOutputStrategy =>
+          handleOneToOneOutput(rule, line, one2one)
+        
+        case one2many : OneToManyOutputStrategy => 
+          handleOneToManyOutput(rule, line, one2many)
+      }
+   }
+   
+   
+    def handleOneToManyOutput(rule : Rule, line : String, output_strategy : OutputStrategy) {
+       val sb : StringBuilder = new StringBuilder()
+       val fieldList = new ArrayBuffer[String]()
+       rule.fieldList.foreach{field=>
         val rsField = resolveField(line, field)
         fieldList+=rsField
       }
@@ -158,7 +179,26 @@ object GrinderApplication  extends App {
       val log_name = getRuleLogMapping(app).get(rule.rule_expression).get
       
       findYourHome(log_name) ! Line(sb.toString)
+   }
+   
+   
+   /*
+    * normal output strategy, one long write to one line
+    * */
+   def handleOneToOneOutput(rule : Rule, line : String, output_strategy : OutputStrategy) {
+       val sb : StringBuilder = new StringBuilder()
+       val fieldList = new ArrayBuffer[String]()
+       rule.fieldList.foreach{field=>
+        val rsField = resolveField(line, field)
+        fieldList+=rsField
+      }
+      for(i <- 0 until fieldList.size) {
+        if(i==fieldList.size-1)  sb.append(fieldList(i))  else sb.append(fieldList(i)+"\t")
+      }
       
+      val log_name = getRuleLogMapping(app).get(rule.rule_expression).get
+      
+      findYourHome(log_name) ! Line(sb.toString)
    }
     
    def resolveField( line : String , fieldDesc :FieldDesc) : String = {
