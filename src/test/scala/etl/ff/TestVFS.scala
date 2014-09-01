@@ -13,6 +13,7 @@ object ConsoleTestVFS extends App {
 //	      println(count)
 	      Console println lines.filter(_.contains("[gsys]ItemGet,")).take(1).mkString
 	      Console println lines.filter(_.contains("[gsys]SetStack,")).take(1).mkString
+	      Console println lines.filter(_.contains("TradeSubmit,")).take(1).mkString
 }
 
 class TestVFS extends FunSpec with ShouldMatchers with Logging {

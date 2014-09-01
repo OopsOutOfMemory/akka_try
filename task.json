@@ -203,7 +203,7 @@
   "rule_expression" : "[gsys]TradeSubmit",
   "output_strategy" : {
      "name" : "one2many",
-     "iterate_field" : "catalogs"
+     "iterate_fields" : "catalogs,stacks"
    },
   "fields_desc" : [
 	{
@@ -285,7 +285,19 @@
 	  },
 	  "splitor" : "=",
 	  "extract" : "right"
-	}]
+	},
+	{
+	  "fieldName":"stacks",
+	  "segmentIndex":4,
+	  "strategy": {
+	   "name" : "regex_multiple",
+	   "expression" : "stack_\\d+=\\d+"
+	  },
+	  "splitor" : "=",
+	  "extract" : "right"
+	}
+	
+	]
 }
 
 

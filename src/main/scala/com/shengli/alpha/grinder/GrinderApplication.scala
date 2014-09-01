@@ -1,27 +1,35 @@
 package com.shengli.alpha.grinder
 
 import scala.collection.mutable.ArrayBuffer
+import scala.collection.mutable.HashMap
 import scala.collection.mutable.HashSet
+import scala.collection.mutable.LinkedHashMap
+import scala.collection.mutable.ListBuffer
+
+import org.json4s.JsonAST.JObject
 import org.json4s.jackson.JsonMethods.parse
 import org.json4s.jvalue2extractable
 import org.json4s.jvalue2monadic
 import org.json4s.string2JsonInput
+
 import com.shengli.etl.ff.mapping.LogRulesMapping
 import com.shengli.etl.ff.strategies.CommonStrategy
 import com.shengli.etl.ff.strategies.FieldDesc
+import com.shengli.etl.ff.strategies.OneToManyOutputStrategy
+import com.shengli.etl.ff.strategies.OneToOneOutputStrategy
+import com.shengli.etl.ff.strategies.OneToOneOutputStrategy
+import com.shengli.etl.ff.strategies.OutputStrategy
+import com.shengli.etl.ff.strategies.OutputStrategy
+import com.shengli.etl.ff.strategies.OutputStrategy
+import com.shengli.etl.ff.strategies.RegexMutipleStrategy
 import com.shengli.etl.ff.strategies.RegexStrategy
 import com.shengli.etl.ff.strategies.Rule
 import com.shengli.etl.ff.strategies.SingleValueStrategy
-import com.shengli.etl.ff.strategies.OutputStrategy
+
 import akka.actor.ActorRef
 import akka.actor.ActorSystem
 import akka.actor.Props
 import akka.actor.actorRef2Scala
-import com.shengli.etl.ff.strategies.OutputStrategy
-import com.shengli.etl.ff.strategies.OneToManyOutputStrategy
-import com.shengli.etl.ff.strategies.OneToOneOutputStrategy
-import com.shengli.etl.ff.strategies.OutputStrategy
-import com.shengli.etl.ff.strategies.OneToOneOutputStrategy
 
 //
 case class Meat(rule_exp : String, log_name : String, rule : Rule)
@@ -34,7 +42,7 @@ object GrinderApplication  extends App {
 	var unique_logs : List[String] = _ 
 	val writers = new ArrayBuffer[ActorRef]()
 	val dateString = "2014-08-28"
-	val sources = scala.io.Source.fromFile("item_log.txt")
+	val sources = scala.io.Source.fromFile("test.txt")
 	val app = "ff14"
 	 
 	//start process
@@ -103,15 +111,17 @@ object GrinderApplication  extends App {
 	      val app_name = (child \ "app_name").extract[String]
 		  val rule_exp = (child \ "rule_expression").extract[String]
 		  val fieldList = (child \ "fields_desc").extract[List[FieldDesc]]
-	      val output = (child \ "output_strategy").extract[OutputStrategy]
-//	      val output_strategy = output.name match {
-//	        case "one2one"=>
-//	          output.asInstanceOf[OneToOneOutputStrategy]
-//	        case "one2many"=>
-//	          output.asInstanceOf[OneToManyOutputStrategy]
-//	      }
+	      val output = (child \ "output_strategy").extract[JObject]
+	      val out_put_strategy_name = (output \ "name").extract[String]
+	      val output_strategy = out_put_strategy_name match {
+	        case "one2one"=>
+	          new OneToOneOutputStrategy(out_put_strategy_name)
+	        case "one2many"=>
+	          val iterate_field = (output \ "iterate_fields").extract[String]
+	          new OneToManyOutputStrategy(out_put_strategy_name, iterate_field)
+	      }
 		  fieldList foreach println
-		  val rule = new Rule(app_name, rule_exp,fieldList,output)
+		  val rule = new Rule(app_name, rule_exp,fieldList,output_strategy)
 		  ruleList+=rule
 	  }
 	  ruleList
@@ -153,6 +163,10 @@ object GrinderApplication  extends App {
 	
 /************************************End actor seeker*************************************************************/
    
+   def formatOutPut(fieldList : Seq[String] ) : String = {
+     fieldList.mkString("\t")
+   }
+    
    def grindMeat(line : String, meat : Meat) {
       val rule = meat.rule
       rule.out_strategy match {
@@ -165,27 +179,47 @@ object GrinderApplication  extends App {
    }
    
    
-    def handleOneToManyOutput(rule : Rule, line : String, output_strategy : OutputStrategy) {
-       val sb : StringBuilder = new StringBuilder()
-       val fieldList = new ArrayBuffer[String]()
+    def handleOneToManyOutput(rule : Rule, line : String, output_strategy : OneToManyOutputStrategy) {
+       val fieldList = new ListBuffer[String]()
+       val newFieldList = new ListBuffer[String]()
+       val iter_keys  =  output_strategy.iterate_fields.split(",",-1)
+       var iter_size = 0
        rule.fieldList.foreach{field=>
         val rsField = resolveField(line, field)
-        fieldList+=rsField
+        if(iter_keys.exists(e=>e.equals(field.fieldName))) iter_size=rsField.split(",",-1).size else iter_size
+        fieldList += rsField
       }
+       
       for(i <- 0 until fieldList.size) {
-        if(i==fieldList.size-1)  sb.append(fieldList(i))  else sb.append(fieldList(i)+"\t")
+        if(fieldList(i).split(",",-1) != iter_size ) {
+          var tempList = new ListBuffer[String]()
+          val current = fieldList(i)
+          for(j <- 0 until iter_size) {
+            tempList += current
+          }
+          newFieldList += tempList.mkString(",")
+        }
+        else{
+           newFieldList += fieldList(i)
+        }
       }
-      
       val log_name = getRuleLogMapping(app).get(rule.rule_expression).get
       
-      findYourHome(log_name) ! Line(sb.toString)
+      for(i <- 0 until iter_size) {
+        var list = new ListBuffer[String]()
+        for(k <- 0 until newFieldList.size ) {
+          list += newFieldList(k).split(",",-1)(i)
+        }
+        findYourHome(log_name) ! Line(formatOutPut(list))
+      }
+         //we assume the one to many have the same size
    }
    
    
    /*
     * normal output strategy, one long write to one line
     * */
-   def handleOneToOneOutput(rule : Rule, line : String, output_strategy : OutputStrategy) {
+   def handleOneToOneOutput(rule : Rule, line : String, output_strategy : OneToOneOutputStrategy) {
        val sb : StringBuilder = new StringBuilder()
        val fieldList = new ArrayBuffer[String]()
        rule.fieldList.foreach{field=>
@@ -198,7 +232,7 @@ object GrinderApplication  extends App {
       
       val log_name = getRuleLogMapping(app).get(rule.rule_expression).get
       
-      findYourHome(log_name) ! Line(sb.toString)
+       findYourHome(log_name) ! Line(formatOutPut(fieldList))
    }
     
    def resolveField( line : String , fieldDesc :FieldDesc) : String = {
@@ -214,7 +248,11 @@ object GrinderApplication  extends App {
 	     case "regex" => 
 	       val regex = new RegexStrategy(segmentValue, fieldDesc)
 	       regex.apply
-		   
+		 
+	     case "regex_multiple" =>
+	       val regex_multiple = new RegexMutipleStrategy(segmentValue, fieldDesc)
+	       regex_multiple.apply
+	       
 		 //This strategy is commonly used to fileId=fieldValue  
 	     case "no_regex" => 
 	       val no_regex = new CommonStrategy(segmentValue, fieldDesc)

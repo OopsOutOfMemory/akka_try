@@ -6,10 +6,11 @@ import scala.collection.mutable.ListBuffer
 
 case class FieldDesc(fieldName:String, segmentIndex:Int,  strategy : Strategy,  splitor : String, extract : String)
 case class Strategy(name:String, expression:String)
-case class Rule(app_name : String, rule_expression : String, fieldList : List[FieldDesc],  out_strategy : OutputStrategy)
+case class Rule(app_name : String, rule_expression : String, fieldList : List[FieldDesc],  out_strategy : Any)
 
-class OutputStrategy(var name:String)
-class OneToManyOutputStrategy(name:String, iterate_field : String) extends OutputStrategy(name)
+
+class OutputStrategy(name : String)
+class OneToManyOutputStrategy(name:String, var iterate_fields : String) extends OutputStrategy(name)
 class OneToOneOutputStrategy(name : String) extends OutputStrategy(name)
 
 //use for different strategies to matching fields
@@ -18,22 +19,23 @@ abstract case class BaseStrategy extends Logging {
 }
 
 class RegexMutipleStrategy(fieldString : String,fieldDesc :FieldDesc) extends BaseStrategy {
-    override def apply() : ListBuffer[String] = {
+    override def apply() : String = {
      try{
        val rtList = RegexUtil.MatchMutipleRegex(fieldDesc.strategy.expression, fieldString)
+       println(rtList)
        var ret = ListBuffer[String]()
 	        //extract
 		   val fieldValue = fieldDesc.extract match {
 		         case "right" =>
 		           rtList.foreach{ e=>
 		           val fieldValueArray = e.split(fieldDesc.splitor,-1)
-		           ret += fieldValueArray(1)
-		           ret
+		           if(fieldValueArray.size>0) ret += fieldValueArray(1) else ret += ""
 		           }
 		         case _ =>
 		           ListBuffer[String]()
 		   }
-           ret
+           //we connect them by , then split it
+           ret.mkString(",")
      }
      catch {
        case ex : ArrayIndexOutOfBoundsException => 
@@ -51,7 +53,7 @@ class RegexStrategy(fieldString : String,fieldDesc :FieldDesc) extends BaseStrat
 		   val fieldValue = fieldDesc.extract match {
 		         case "right" =>
 		           val fieldValueArray = rt.split(fieldDesc.splitor,-1)
-		           fieldValueArray(1)
+		           if(fieldValueArray.size>0)  fieldValueArray(1) else ""
 		         case _ =>
 		           rt
 		   }
@@ -71,7 +73,7 @@ class CommonStrategy(fieldString : String, fieldDesc :FieldDesc) extends BaseStr
     	val fieldValueArray = fieldString.split(fieldDesc.splitor,-1)
 		   val fieldValue = fieldDesc.extract match {
 		         case "right" =>
-		           fieldValueArray(1)
+		            if(fieldValueArray.size>0)  fieldValueArray(1) else ""
 		         case _ =>
 		           None 
 	       }

@@ -23,10 +23,7 @@ object RegexUtil {
 	
 	def MatchMutipleRegex(regex : String, line : String) : List[String] = {
 	  val pattern = regex.r
-	  val res =  pattern findAllMatchIn line match {
-	    case it : Iterator[_] => it.toList.asInstanceOf[List[String]]
-	    case _ => List()
-	  }
-	  res
+	  val res =  pattern.findAllMatchIn(line).toList
+	  res.map(matcher=>matcher.toString)
 	}
 }
