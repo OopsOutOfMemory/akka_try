@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@743ad3dd[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2635208d[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -277,6 +277,131 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies commons-vfs#commons-vfs;1.0->commons-logging#commons-logging;1.0.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies commons-vfs#commons-vfs;1.0->commons-logging#commons-logging;1.0.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->commons-vfs#commons-vfs;1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.esotericsoftware.reflectasm#reflectasm;1.07 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.esotericsoftware.reflectasm#reflectasm;1.07 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.esotericsoftware.reflectasm#reflectasm;1.07[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.esotericsoftware.reflectasm#reflectasm;1.07[0m
+[0m[[0mdebug[0m] [0m	found com.esotericsoftware.reflectasm#reflectasm;1.07 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.ow2.asm#asm;4.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.ow2.asm#asm;4.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.ow2.asm#asm;4.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.ow2.asm#asm;4.0[0m
+[0m[[0mdebug[0m] [0m	found org.ow2.asm#asm;4.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.esotericsoftware.kryo#kryo;2.21 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.esotericsoftware.kryo#kryo;2.21 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.esotericsoftware.kryo\kryo\2.21\ivys\ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.esotericsoftware.kryo#kryo;2.21[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.esotericsoftware.kryo#kryo;2.21[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.pom (2.21)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.esotericsoftware.kryo#kryo;2.21!kryo.pom(pom.original) (1229ms)[0m
+[0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;7 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.sonatype.oss#oss-parent;7[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.esotericsoftware.kryo\kryo\2.21\bundles\kryo.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.jar[0m
+[0m[[0mdebug[0m] [0m	found com.esotericsoftware.kryo#kryo;2.21 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.esotericsoftware.minlog#minlog;1.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.esotericsoftware.minlog#minlog;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.esotericsoftware.minlog\minlog\1.2\ivys\ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.esotericsoftware.minlog#minlog;1.2[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.esotericsoftware.minlog#minlog;1.2[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.pom (1.2)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.esotericsoftware.minlog#minlog;1.2!minlog.pom(pom.original) (1260ms)[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.esotericsoftware.minlog\minlog\1.2\jars\minlog.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar[0m
+[0m[[0mdebug[0m] [0m	found com.esotericsoftware.minlog#minlog;1.2 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.objenesis#objenesis;1.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.objenesis#objenesis;1.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\org.objenesis\objenesis\1.2\ivys\ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.objenesis#objenesis;1.2[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.objenesis#objenesis;1.2[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.pom (1.2)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.objenesis#objenesis;1.2!objenesis.pom(pom.original) (1195ms)[0m
+[0m[[0minfo[0m] [0mResolving org.objenesis#objenesis-parent;1.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.objenesis#objenesis-parent;1.2 {}[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\org.objenesis\objenesis-parent\1.2\ivys\ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.objenesis#objenesis-parent;1.2[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.objenesis#objenesis-parent;1.2[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.pom (1.2)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.objenesis#objenesis-parent;1.2!objenesis-parent.pom(pom.original) (1388ms)[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\org.objenesis\objenesis-parent\1.2\jars\objenesis-parent.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repository.apache.org/content/repositories/releases/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repository.apache.org/content/repositories/releases/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repository.jboss.org/nexus/content/repositories/releases/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repository.jboss.org/nexus/content/repositories/releases/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.eclipse.org/content/repositories/paho-releases/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.eclipse.org/content/repositories/paho-releases/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repository.cloudera.com/artifactory/cloudera-repos/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repository.cloudera.com/artifactory/cloudera-repos/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repository.cloudera.com/content/repositories/releases/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repository.cloudera.com/content/repositories/releases/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/C:/Users/shengli.victor/.m2/repository/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://oss.sonatype.org/content/repositories/releases/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://oss.sonatype.org/content/repositories/releases/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://oss.sonatype.org/content/repositories/snaspshots/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://oss.sonatype.org/content/repositories/snaspshots/org/objenesis/objenesis-parent/1.2/objenesis-parent-1.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\org.objenesis\objenesis\1.2\jars\objenesis.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.jar[0m
+[0m[[0mdebug[0m] [0m	found org.objenesis#objenesis;1.2 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [compile][0m
@@ -422,6 +547,30 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies commons-vfs#commons-vfs;1.0->commons-logging#commons-logging;1.0.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies commons-vfs#commons-vfs;1.0->commons-logging#commons-logging;1.0.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->commons-vfs#commons-vfs;1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [runtime][0m
@@ -568,6 +717,30 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies commons-vfs#commons-vfs;1.0->commons-logging#commons-logging;1.0.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies commons-vfs#commons-vfs;1.0->commons-logging#commons-logging;1.0.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->commons-vfs#commons-vfs;1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
@@ -717,6 +890,30 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies commons-vfs#commons-vfs;1.0->commons-logging#commons-logging;1.0.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies commons-vfs#commons-vfs;1.0->commons-logging#commons-logging;1.0.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->commons-vfs#commons-vfs;1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -865,6 +1062,30 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies commons-vfs#commons-vfs;1.0->commons-logging#commons-logging;1.0.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies commons-vfs#commons-vfs;1.0->commons-logging#commons-logging;1.0.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->commons-vfs#commons-vfs;1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [test-internal][0m
@@ -1013,6 +1234,30 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies commons-vfs#commons-vfs;1.0->commons-logging#commons-logging;1.0.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies commons-vfs#commons-vfs;1.0->commons-logging#commons-logging;1.0.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->commons-vfs#commons-vfs;1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.reflectasm#reflectasm;1.07->org.ow2.asm#asm;4.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.reflectasm#reflectasm;1.07 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->com.esotericsoftware.minlog#minlog;1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.esotericsoftware.kryo#kryo;2.21->org.objenesis#objenesis;1.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#akka_try_2.10;1.0->com.esotericsoftware.kryo#kryo;2.21 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#akka_try_2.10;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
@@ -1092,6 +1337,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.json4s#json4s-native_2.10;3.2.10!json4s-native_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.json4s#json4s-jackson_2.10;3.2.10!json4s-jackson_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-vfs#commons-vfs;1.0!commons-vfs.jar[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\shengli.victor\.ivy2\local\com.esotericsoftware.reflectasm\reflectasm\1.07\jars\reflectasm-shaded.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/esotericsoftware/reflectasm/reflectasm/1.07/reflectasm-1.07-shaded.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/esotericsoftware/reflectasm/reflectasm/1.07/reflectasm-1.07-shaded.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/esotericsoftware/reflectasm/reflectasm/1.07/reflectasm-1.07-shaded.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/esotericsoftware/reflectasm/reflectasm/1.07/reflectasm-1.07-shaded.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/esotericsoftware/reflectasm/reflectasm/1.07/reflectasm-1.07-shaded.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.esotericsoftware.reflectasm#reflectasm;1.07!reflectasm.jar (2021ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.esotericsoftware.kryo#kryo;2.21!kryo.jar(bundle) (5305ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar[0m
@@ -1105,11 +1363,24 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-annotations;2.3.0!jackson-annotations.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.3.1!jackson-core.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-logging#commons-logging;1.0.4!commons-logging.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ow2.asm#asm;4.0!asm.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.esotericsoftware.minlog#minlog;1.2!minlog.jar (2237ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.objenesis#objenesis;1.2!objenesis.jar (4227ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.3!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.3!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2371ms :: artifacts dl 39ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 27725ms :: artifacts dl 13894ms[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 compile produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 runtime produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 test produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-test.xml[0m
@@ -1123,5 +1394,5 @@
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 docs produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 pom produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#akka_try_2.10;1.0 scala-tool produced in E:\akka_try\target\resolution-cache\reports\default-akka_try_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2371ms resolve - 39ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (27725ms resolve - 13894ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

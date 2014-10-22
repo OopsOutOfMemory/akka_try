@@ -7,8 +7,67 @@
 		revision="1.0"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20140826095333"/>
+		date="20140902162303"/>
 	<dependencies>
+		<module organisation="com.esotericsoftware.kryo" name="kryo">
+			<revision name="2.21" status="release" pubdate="20130228044753" resolver="public" artresolver="public" homepage="http://code.google.com/p/kryo/" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="22">
+				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="5653" time="1229" location="C:\Users\shengli.victor\.ivy2\cache\com.esotericsoftware.kryo\kryo\ivy-2.21.xml" searched="true" original-local-location="C:\Users\shengli.victor\.ivy2\cache\com.esotericsoftware.kryo\kryo\ivy-2.21.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.pom"/>
+				<caller organisation="default" name="akka_try_2.10" conf="optional, compile, provided, compile-internal" rev="2.21" rev-constraint-default="2.21" rev-constraint-dynamic="2.21" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="kryo" type="bundle" ext="jar" status="successful" details="" size="363460" time="5305" location="C:\Users\shengli.victor\.ivy2\cache\com.esotericsoftware.kryo\kryo\bundles\kryo-2.21.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.objenesis" name="objenesis">
+			<revision name="1.2" status="release" pubdate="20090827065019" resolver="public" artresolver="public" homepage="http://objenesis.googlecode.com/svn/docs/index.html" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="24">
+				<metadata-artifact status="successful" details="" size="3008" time="1195" location="C:\Users\shengli.victor\.ivy2\cache\org.objenesis\objenesis\ivy-1.2.xml" searched="true" original-local-location="C:\Users\shengli.victor\.ivy2\cache\org.objenesis\objenesis\ivy-1.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.pom"/>
+				<caller organisation="com.esotericsoftware.kryo" name="kryo" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="2.21"/>
+				<artifacts>
+					<artifact name="objenesis" type="jar" ext="jar" status="successful" details="" size="36046" time="4227" location="C:\Users\shengli.victor\.ivy2\cache\org.objenesis\objenesis\jars\objenesis-1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/objenesis/objenesis/1.2/objenesis-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.esotericsoftware.minlog" name="minlog">
+			<revision name="1.2" status="release" pubdate="20120531202649" resolver="public" artresolver="public" homepage="http://code.google.com/p/minlog/" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="23">
+				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="1588" time="1260" location="C:\Users\shengli.victor\.ivy2\cache\com.esotericsoftware.minlog\minlog\ivy-1.2.xml" searched="true" original-local-location="C:\Users\shengli.victor\.ivy2\cache\com.esotericsoftware.minlog\minlog\ivy-1.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.pom"/>
+				<caller organisation="com.esotericsoftware.kryo" name="kryo" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="2.21"/>
+				<artifacts>
+					<artifact name="minlog" type="jar" ext="jar" status="successful" details="" size="4965" time="2237" location="C:\Users\shengli.victor\.ivy2\cache\com.esotericsoftware.minlog\minlog\jars\minlog-1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.esotericsoftware.reflectasm" name="reflectasm">
+			<revision name="1.07" status="release" pubdate="20120619162452" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/reflectasm/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master" position="20">
+				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2972" time="0" location="C:\Users\shengli.victor\.ivy2\cache\com.esotericsoftware.reflectasm\reflectasm\ivy-1.07.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/esotericsoftware/reflectasm/reflectasm/1.07/reflectasm-1.07.pom"/>
+				<caller organisation="com.esotericsoftware.kryo" name="kryo" conf="default, compile, runtime, master" rev="1.07" rev-constraint-default="1.07" rev-constraint-dynamic="1.07" callerrev="2.21"/>
+				<caller organisation="default" name="akka_try_2.10" conf="optional, compile, provided, compile-internal" rev="1.07" rev-constraint-default="1.07" rev-constraint-dynamic="1.07" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="reflectasm" type="jar" ext="jar" extra-classifier="shaded" status="successful" details="" size="65612" time="2021" location="C:\Users\shengli.victor\.ivy2\cache\com.esotericsoftware.reflectasm\reflectasm\jars\reflectasm-1.07-shaded.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/esotericsoftware/reflectasm/reflectasm/1.07/reflectasm-1.07-shaded.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm">
+			<revision name="4.0" status="release" pubdate="20111207032219" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="21">
+				<metadata-artifact status="no" details="" size="3781" time="0" location="C:\Users\shengli.victor\.ivy2\cache\org.ow2.asm\asm\ivy-4.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/ow2/asm/asm/4.0/asm-4.0.pom"/>
+				<caller organisation="com.esotericsoftware.reflectasm" name="reflectasm" conf="default, compile, runtime, master" rev="4.0" rev-constraint-default="4.0" rev-constraint-dynamic="4.0" callerrev="1.07"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="46022" time="0" location="C:\Users\shengli.victor\.ivy2\cache\org.ow2.asm\asm\jars\asm-4.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm/4.0/asm-4.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="commons-vfs" name="commons-vfs">
 			<revision name="1.0" status="release" pubdate="20061229024519" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jakarta.apache.org/commons/vfs/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="18">
 				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>

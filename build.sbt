@@ -16,7 +16,9 @@ libraryDependencies ++= Seq(
    "org.slf4j" % "slf4j-log4j12" % "1.7.7",
    "org.json4s" %% "json4s-native" % "3.2.10",  
    "org.json4s" %% "json4s-jackson" % "3.2.10",
-   "commons-vfs" % "commons-vfs" % "1.0"
+   "commons-vfs" % "commons-vfs" % "1.0",
+   "com.esotericsoftware.reflectasm" % "reflectasm" % "1.07",
+    "com.esotericsoftware.kryo" % "kryo" % "2.21"
 )
 
 

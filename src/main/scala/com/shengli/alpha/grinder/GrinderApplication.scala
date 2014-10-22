@@ -42,7 +42,7 @@ object GrinderApplication  extends App {
 	var unique_logs : List[String] = _ 
 	val writers = new ArrayBuffer[ActorRef]()
 	val dateString = "2014-08-28"
-	val sources = scala.io.Source.fromFile("test.txt")
+	val sources = scala.io.Source.fromFile("item_log.txt")
 	val app = "ff14"
 	 
 	//start process

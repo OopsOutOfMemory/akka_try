@@ -24,6 +24,8 @@
   <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.1.jar"/>
   <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\commons-vfs\commons-vfs\jars\commons-vfs-1.0.jar"/>
   <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.0.4.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\com.esotericsoftware.reflectasm\reflectasm\jars\reflectasm-1.07.jar"/>
+  <classpathentry kind="lib" path="C:\Users\shengli.victor\.ivy2\cache\org.ow2.asm\asm\jars\asm-4.0.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
 </classpath>
